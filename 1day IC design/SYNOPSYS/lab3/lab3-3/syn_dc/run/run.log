@@ -1,0 +1,31 @@
+
+                      Design Compiler Graphical
+                            DC Ultra (TM)
+                             DFTMAX (TM)
+                         Power Compiler (TM)
+                           DesignWare (R)
+                           DC Expert (TM)
+                         Design Vision (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                            DFT Compiler
+                        Library Compiler (TM)
+                         Design Compiler(R)
+
+            Version I-2013.12 for RHEL64 -- Nov 21, 2013
+               Copyright (c) 1988-2013 Synopsys, Inc.
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+Initializing...
+Starting shell in Topographical mode...
+Loading db file '/home/student/SYNOPSYS/lab3/lab3-3/syn_dc/model/slow.db'
+Loading db file '/home/student/SYNOPSYS/lab3/lab3-3/syn_dc/model/fast.db'
+Loading db file '/home/student/SYNOPSYS/lab3/lab3-3/syn_dc/model/tpz973gwc.db'
+Loading db file '/home/student/SYNOPSYS/lab3/lab3-3/syn_dc/model/tpz973gbc.db'
+Initializing gui preferences from file  /home/student/.synopsys_dv_prefs.tcl
+Error: could not open script file "/home/student/SYNOPSYS/lab3/lab3-3/syn_dc/run/00_run.tcl" (CMD-015)
+design_vision-topo> design_vision-topo> design_vision-topo> 

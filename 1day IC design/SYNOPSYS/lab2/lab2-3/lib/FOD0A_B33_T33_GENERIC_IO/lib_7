@@ -1,0 +1,246 @@
+XMPA
+ O 2
+ SMT 1
+ PU 1
+ PD 1
+ IE 1
+ I 1
+XMPB
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ IE 1
+ I 1
+ZMP02AA
+ I 1
+ E 1
+ IE 1
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ IO 4
+ZMP02AB
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ I 1
+ E 1
+ IE 1
+ IO 4
+ZMP02BA
+ I 1
+ E 1
+ IE 1
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ IO 4
+ZMP02BB
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ I 1
+ E 1
+ IE 1
+ IO 4
+ZMP04AA
+ I 1
+ E 1
+ IE 1
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ IO 4
+ZMP04AB
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ I 1
+ E 1
+ IE 1
+ IO 4
+ZMP04BA
+ I 1
+ E 1
+ IE 1
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ IO 4
+ZMP04BB
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ I 1
+ E 1
+ IE 1
+ IO 4
+ZMP06AA
+ I 1
+ E 1
+ IE 1
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ IO 4
+ZMP06AB
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ I 1
+ E 1
+ IE 1
+ IO 4
+ZMP06BA
+ I 1
+ E 1
+ IE 1
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ IO 4
+ZMP06BB
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ I 1
+ E 1
+ IE 1
+ IO 4
+ZMP08AA
+ I 1
+ E 1
+ IE 1
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ IO 4
+ZMP08AB
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ I 1
+ E 1
+ IE 1
+ IO 4
+ZMP08BA
+ I 1
+ E 1
+ IE 1
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ IO 4
+ZMP08BB
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ I 1
+ E 1
+ IE 1
+ IO 4
+ZMP0CAA
+ I 1
+ E 1
+ IE 1
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ IO 4
+ZMP0CAB
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ I 1
+ E 1
+ IE 1
+ IO 4
+ZMP0CBA
+ I 1
+ E 1
+ IE 1
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ IO 4
+ZMP0CBB
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ I 1
+ E 1
+ IE 1
+ IO 4
+ZMP10AA
+ I 1
+ E 1
+ IE 1
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ IO 4
+ZMP10AB
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ I 1
+ E 1
+ IE 1
+ IO 4
+ZMP10BA
+ I 1
+ E 1
+ IE 1
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ IO 4
+ZMP10BB
+ PD 1
+ PU 1
+ SMT 1
+ O 2
+ I 1
+ E 1
+ IE 1
+ IO 4
+GNDKGA
+ GND 36
+GNDKGB
+ GND 36
+VCCKGA
+ VCC 20
+VCCKGB
+ VCC 20
+GND3IOGA
+ GNDO 36
+GND3IOGB
+ GNDO 36
+VCC3IOGA
+ VCC3O 20
+VCC3IOGB
+ VCC3O 20

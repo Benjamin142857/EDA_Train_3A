@@ -1,0 +1,234 @@
+STIL 1.0 {
+    Design P2001.01;
+}
+Header {
+    Title "Minimal STIL for design `CHIP'";
+    Date "Thu Jun 19 18:37:29 2008";
+    Source "DFT Compiler X-2005.09-SP4-2";
+}
+Signals {
+    "X[0]" In;
+    "X[1]" In;
+    "X[2]" In;
+    "X[3]" In;
+    "X[4]" In;
+    "X[5]" In;
+    "X[6]" In;
+    "X[7]" In;
+    "clk" In;
+    "reset" In;
+    "se" In;
+    "si" In;
+    "Y[0]" Out;
+    "Y[1]" Out;
+    "Y[2]" Out;
+    "Y[3]" Out;
+    "Y[4]" Out;
+    "Y[5]" Out;
+    "Y[6]" Out;
+    "Y[7]" Out;
+    "Y[8]" Out;
+    "Y[9]" Out;
+    "so" Out;
+}
+SignalGroups {
+    "_si" = '"si"' {
+        ScanIn;
+    }
+    "_so" = '"so"' {
+        ScanOut;
+    }
+    "_clk" = '"clk" + "reset"';
+    "all_inputs" = '"X[0]" + "X[1]" + "X[2]" + "X[3]" + "X[4]" + "X[5]" + "X[6]" 
+    + "X[7]" + "clk" + "reset" + "se" + "si"';
+    "all_outputs" = '"Y[0]" + "Y[1]" + "Y[2]" + "Y[3]" + "Y[4]" + "Y[5]" + 
+    "Y[6]" + "Y[7]" + "Y[8]" + "Y[9]" + "so"';
+    "all_ports" = '"all_inputs" + "all_outputs"';
+    "_pi" = '"X[0]" + "X[1]" + "X[2]" + "X[3]" + "X[4]" + "X[5]" + "X[6]" + 
+    "X[7]" + "clk" + "reset" + "se" + "si"';
+    "_po" = '"Y[0]" + "Y[1]" + "Y[2]" + "Y[3]" + "Y[4]" + "Y[5]" + "Y[6]" + 
+    "Y[7]" + "Y[8]" + "Y[9]" + "so"';
+}
+ScanStructures {
+    ScanChain "chain1" {
+        ScanLength 200;
+        ScanIn "si";
+        ScanOut "so";
+        ScanEnable "se";
+        ScanMasterClock "clk";
+    }
+}
+Timing {
+    WaveformTable "_default_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '5ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '5ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '5ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '5ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '95ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '95ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '95ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '95ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+            "reset" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+        }
+    }
+}
+Procedures {
+    "capture" {
+        W "_default_WFT_";
+        C {
+            "all_inputs" = \r8 N 00NN;
+            "all_outputs" = \r11 X;
+        }
+        V {
+            "_pi" = \r12 #;
+        }
+        V {
+            "_po" = \r11 #;
+        }
+    }
+    "capture_clk" {
+        W "_default_WFT_";
+        C {
+            "all_inputs" = \r8 N 00NN;
+            "all_outputs" = \r11 X;
+        }
+        "forcePI" : V {
+            "_pi" = \r12 #;
+        }
+        "measurePO" : V {
+            "_po" = \r11 #;
+        }
+        C {
+            "Y[0]" = X;
+            "Y[1]" = X;
+            "Y[2]" = X;
+            "Y[3]" = X;
+            "Y[4]" = X;
+            "Y[5]" = X;
+            "Y[6]" = X;
+            "Y[7]" = X;
+            "Y[8]" = X;
+            "Y[9]" = X;
+            "so" = X;
+        }
+        "pulse" : V {
+            "clk" = P;
+        }
+    }
+    "capture_reset" {
+        W "_default_WFT_";
+        C {
+            "all_inputs" = \r8 N 00NN;
+            "all_outputs" = \r11 X;
+        }
+        "forcePI" : V {
+            "_pi" = \r12 #;
+        }
+        "measurePO" : V {
+            "_po" = \r11 #;
+        }
+        C {
+            "Y[0]" = X;
+            "Y[1]" = X;
+            "Y[2]" = X;
+            "Y[3]" = X;
+            "Y[4]" = X;
+            "Y[5]" = X;
+            "Y[6]" = X;
+            "Y[7]" = X;
+            "Y[8]" = X;
+            "Y[9]" = X;
+            "so" = X;
+        }
+        "pulse" : V {
+            "reset" = P;
+        }
+    }
+    "load_unload" {
+        W "_default_WFT_";
+        C {
+            "all_inputs" = \r8 N 00NN;
+            "all_outputs" = \r11 X;
+        }
+        "Internal_scan_pre_shift" : V {
+            "_clk" = 00;
+            "_si" = N;
+            "_so" = #;
+            "se" = 1;
+        }
+        Shift {
+            V {
+                "_clk" = P0;
+                "_si" = #;
+                "_so" = #;
+            }
+        }
+    }
+}
+MacroDefs {
+    "test_setup" {
+        W "_default_WFT_";
+        C {
+            "all_inputs" = \r12 N;
+            "all_outputs" = \r11 X;
+        }
+        V {
+            "clk" = 0;
+            "reset" = 0;
+        }
+        V {
+        }
+    }
+}
+

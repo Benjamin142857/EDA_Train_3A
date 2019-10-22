@@ -1,0 +1,11 @@
+module lab1(a,b,c,sel,z);
+input [7:0] a,b,c;
+input sel;
+output [8:0] z;
+reg [8:0] z;
+always @(a or b or c or #sel) begin
+if (sel) z = a + b;
+else z = a + c;
+end
+
+endmodule
